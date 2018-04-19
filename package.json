@@ -26,10 +26,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UnaBiz/sigfox-iot-cloud.git"
+    "url": "git+https://github.com/nebodrc/sigfox-iot-cloud.git"
   },
   "bugs": {
     "url": "https://github.com/UnaBiz/sigfox-iot-cloud/issues"
   },
-  "homepage": "https://github.com/UnaBiz/sigfox-iot-cloud#readme"
+  "homepage": "https://github.com/nebodrc/sigfox-iot-cloud#readme"
 }
