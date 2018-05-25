@@ -131,7 +131,7 @@ exports.main = process.env.FUNCTION_NAME ? require('sigfox-gcloud/main').getMain
     const afterExec = error => error ? callback(error, 'AutoInstall Failed')
       : require('/tmp/autoinstall').installAndRunWrapper(event, context, callback, package_json, __filename, wrapper, wrap);
     if (require('fs').existsSync('/tmp/autoinstall.js')) return afterExec(null);  //  Already downloaded.
-    const cmd = 'curl -s -S -o /tmp/autoinstall.js https://raw.githubusercontent.com/UnaBiz/sigfox-iot-cloud/master/autoinstall.js';
+    const cmd = 'curl -s -S -o /tmp/autoinstall.js https://raw.githubusercontent.com/nebodrc/sigfox-iot-cloud/master/autoinstall.js';
     const child = require('child_process').exec(cmd, { maxBuffer: 1024 * 500 }, afterExec);
     child.stdout.on('data', console.log); child.stderr.on('data', console.error); return null; };
 //  exports.main is the startup function for AWS Lambda and Google Cloud Function.
