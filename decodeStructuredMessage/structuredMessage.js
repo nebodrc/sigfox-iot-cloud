@@ -41,9 +41,9 @@ function decodeMessage(data, textFields) { /* eslint-disable no-bitwise, operato
   if (data.length !== 8 && data.length !== 16 && data.length !== 24) return {};
   try {
     const result = {};
-   for (let i = 0; i < data.length; i = i + 8) {
-      const name = data.substring(i, i + 4);
-      const val = data.substring(i + 4, i + 8);
+   for (let i = 0; i < data.length; i = i + 6) {
+      const name = data.substring(i, i + 2);
+      const val = data.substring(i + 2, i + 6);
       const encodedName =
         (parseInt(name[2], 16) << 12) +
         (parseInt(name[3], 16) << 8) +
