@@ -22,8 +22,7 @@
   },
   "dependencies": {
     "json-stringify-safe": "^5.0.1",
-    "uuid": "^3.1.0",
-    "sigfox-parser": "waylayio/sigfox-parser"
+    "uuid": "^3.1.0"
   },
   "repository": {
     "type": "git",

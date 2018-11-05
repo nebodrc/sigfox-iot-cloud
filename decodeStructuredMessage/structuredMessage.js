@@ -32,7 +32,9 @@ function decodeText(encodedText0) { /* eslint-disable no-bitwise, operator-assig
 
 function decodeMessage(data, textFields) { /* eslint-disable no-bitwise, operator-assignment */
   //920e82002731b01
+  console.log("Starting parser...");
   var parsed = require('sigfox-parser')('C01234','b1::bool:7 b2::bool:6 i1:1:uint:16');
+  console.log("Done parsing");
   return result;
 /*
   //  Decode the packed binary SIGFOX message body data e.g. 920e5a00b051680194597b00

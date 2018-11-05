@@ -11,5 +11,6 @@
     "node": ">=7.8.0"
   },
   "dependencies": {
+    "sigfox-parser": "waylayio/sigfox-parser"
   }
 }
