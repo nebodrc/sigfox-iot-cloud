@@ -31,6 +31,10 @@ function decodeText(encodedText0) { /* eslint-disable no-bitwise, operator-assig
 } /* eslint-enable no-bitwise, operator-assignment */
 
 function decodeMessage(data, textFields) { /* eslint-disable no-bitwise, operator-assignment */
+  //920e82002731b01
+  var result = require('sigfox-parser')('920e82002731b01','b1::bool:7 b2::bool:6 i1:1:uint:16');
+  return result;
+/*
   //  Decode the packed binary SIGFOX message body data e.g. 920e5a00b051680194597b00
   //  2 bytes name, 2 bytes float * 10, 2 bytes name, 2 bytes float * 10, ...
   //  Returns an object with the decoded data e.g. {ctr: 999, lig: 754, tmp: 23}
@@ -69,6 +73,7 @@ function decodeMessage(data, textFields) { /* eslint-disable no-bitwise, operato
   } catch (error) {
     throw error;
   }
+*/
 } /* eslint-enable no-bitwise, operator-assignment */
 
 module.exports = {
