@@ -43,11 +43,11 @@ function wrap(scloud) {  //  scloud will be either sigfox-gcloud or sigfox-aws, 
       const decodedData = structuredMessage.decodeMessage(body.data);
       scloud.log(req, 'customTest', decodedData);
       const result = Object.assign({}, body, decodedData);
-      scloud.log(req, 'decodeMessage', { result, body, device: req.device });
+      scloud.log(req, 'decodeMessageNormal', { result, body, device: req.device });
       return Promise.resolve(result);
     } catch (error) {
       //  In case of error, return the original message.
-      scloud.log(req, 'decodeMessage', { error, body, device: req.device });
+      scloud.log(req, 'decodeMessageError', { error, body, device: req.device });
       return Promise.resolve(body);
     }
   }
