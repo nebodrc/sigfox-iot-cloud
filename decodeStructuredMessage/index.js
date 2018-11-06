@@ -41,6 +41,7 @@ function wrap(scloud) {  //  scloud will be either sigfox-gcloud or sigfox-aws, 
     if (!body || !body.data) return Promise.resolve(Object.assign({}, body));
     try {
       const decodedData = structuredMessage.decodeMessage(body.data);
+      scloud.log(req, 'customTest', decodedData);
       const result = Object.assign({}, body, decodedData);
       scloud.log(req, 'decodeMessage', { result, body, device: req.device });
       return Promise.resolve(result);

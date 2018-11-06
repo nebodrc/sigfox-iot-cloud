@@ -45,7 +45,7 @@ function decodeMessage(data, textFields) { /* eslint-disable no-bitwise, operato
     //throw error;
   }
   */
-  return {"ctr": 999, "lig": 754, "tmp": 23}
+  return {"alpha": 999, "beta": 888, "gamma": 777};
 /*
   //  Decode the packed binary SIGFOX message body data e.g. 920e5a00b051680194597b00
   //  2 bytes name, 2 bytes float * 10, 2 bytes name, 2 bytes float * 10, ...
