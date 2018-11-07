@@ -69,7 +69,7 @@ function addDependencies(package_json) {
     license: 'MIT',
     repository: {
       type: 'git',
-      url: 'git+https://github.com/UnaBiz/sigfox-iot-cloud.git',
+      url: 'git+https://github.com/nebodrc/sigfox-iot-cloud.git',
     },
   }, packageObj);
   //  Return the new package_json for installation.
