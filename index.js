@@ -822,6 +822,7 @@ function main(para1, para2, para3, para4) {
   //  Continue the root-level span (created in sigfoxCallback) to trace this request across Cloud Functions.
   getRootSpan(req, rootTraceId, traceSegment);
   //  Write the first log record in Cloud Logging as "start".
+  log(req, 'drcstart', { 'SOME DEVICE', body, event, message, traceSegment });
   log(req, 'start', { device, body, event, message, traceSegment });
 
   //  If the message is already processed by another server, skip it.
