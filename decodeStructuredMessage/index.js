@@ -38,6 +38,7 @@ function wrap(scloud) {  //  scloud will be either sigfox-gcloud or sigfox-aws, 
     //  2 bytes name, 2 bytes float * 10, 2 bytes name, 2 bytes float * 10, ...
     //  Returns a promise for the updated body.  If no body available, return {}.
     scloud.log(req, 'task', { wrapCount }); wrapCount += 1;  //  Count how many times the wrapper was reused.
+    console.log('LOG TEST', 'SOMETHING');
     if (!body || !body.data) return Promise.resolve(Object.assign({}, body));
     try {
       const decodedData = structuredMessage.decodeMessage(body.data);
