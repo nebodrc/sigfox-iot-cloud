@@ -85,7 +85,7 @@ function wrap(scloud) {  //  scloud will be either sigfox-gcloud or sigfox-aws, 
     //  to process this message e.g. routeMessage.
     //  Where does device type come from?  It's specified in the callback URL
     //  e.g. https://myproject.appspot.com?type=gps
-    scloud.log(req, 'saveMessage', { device, type, body, rootTraceId });
+    scloud.log(req, 'saveMessage TEST', { device, type, body, rootTraceId });
     const queues = [];
     const query = req.query;
     //  Compose the message and record the history.
