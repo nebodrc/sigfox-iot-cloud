@@ -76,7 +76,7 @@ function wrap(scloud) {  //  scloud will be either sigfox-gcloud or sigfox-aws, 
         }
         defaultRoute = result;
         defaultRouteExpiry = Date.now() + routeExpiry;
-        scloud.log(req, 'getRoute', { result, device: req.device });
+        scloud.log(req, 'getRoute TEST', { result, device: req.device });
         return result;
       })
       .catch((error) => {
