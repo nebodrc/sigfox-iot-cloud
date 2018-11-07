@@ -32,6 +32,7 @@ function decodeText(encodedText0) { /* eslint-disable no-bitwise, operator-assig
 
 function decodeMessage(data, textFields) { /* eslint-disable no-bitwise, operator-assignment */
   //920e82002731b01
+  //920e82002731b01
   /*
   try {
     console.log("Starting parser...");
