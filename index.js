@@ -340,7 +340,7 @@ function deferLog(req, action, para0, record, now, operation, loggingLog0) { /* 
           (para && para.result) ? '<<'    //  Call has completed
             : (action === 'start') ? '>>' //  Call has started
             : '__';
-        let key = `_${direction}_[ ${para.device || req.device || ' ? ? ? '} ]____${action || '    '}____`;
+        let key = `_${direction}_DRC[ ${para.device || req.device || ' ? ? ? '} ]____${action || '    '}____`;
         if (key.length < logKeyLength) key += '_'.repeat(logKeyLength - key.length);
         const event = {};
         event[key] = para;
