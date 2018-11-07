@@ -29,7 +29,7 @@ const exec = require('child_process').exec;
 
 function reloadLambda(event, context, callback) {
   //  Load the relocated Lambda Function at /tmp/index.js and call it.
-  console.log('AutoInstall require', installedSourceFilename);
+  console.log('AutoInstall require TEST', installedSourceFilename);
   const installedModule = require(installedSourceFilename);
   console.log(`AutoInstall Calling handler in ${installedSourceFilename} from ${__filename}...`);
   //  Set a flag so we know that we have reloaded.
